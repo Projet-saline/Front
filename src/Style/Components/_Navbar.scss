@@ -1,26 +1,56 @@
-.Header {
+.Navbar {
     width: 100vw;
     height: 5vh;
     background-color: $primary-500;
     color: $primary-50;
     padding: 1rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 0%;
+    padding-right: 0%;
     
     h1 {
         font-size: 2rem;
         margin: 0;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0;
     }
 }
 
+.Menu {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.Menu > p {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.Menu > p:hover {
+    color: $secondary-300;
+}
+
+.Logo {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+}
+
 /* Mobile variant */
 
-@media screen and (max-width: 768px) {
-    .Header {
+ @media screen and (max-width: 768px) {
+    .Navbar {
         width: 100vw;
         height: 5vh;
         background-color: $primary-500;

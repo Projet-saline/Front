@@ -44,64 +44,65 @@ $focus-200 : #c5e3ff;
 $focus-100 : #d8ecff;
 $focus-50 : #f2f9ff;
 
-h1 {
-    font-size: 56px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-h4 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-h5 {
-    font-size: 26px;
-    font-weight: bold;
-}
-
-h6 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-p {
-    font-size: 16px;
-    font-weight: medium;
-}
-
+// Global styles
 * {
     padding: 0%;
     margin: 0%;
     font-family: Montserrat;
+}
+
+.root {
     display: flex;
     flex-direction: column;
 }
 
-/* Mobile variant */
+// Typography styles
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 26px;
+}
+
+h6 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+// Mobile variant
+
 @media screen and (max-width: 768px) {
 
     h1 {
         font-size: 24px;
-        font-weight: bold;
+        font-weight: 700;
     }
 
     h2 {
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 700;
     }
 
     p {
         font-size: 18px;
-        font-weight: medium;
+        font-weight: 500;
     }
 }

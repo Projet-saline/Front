@@ -1,16 +1,14 @@
 import React from "react";
-import Header from "../Components/Header";
+import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 const Home = () =>  {
 
     return (
         <>
-            <Header/>   {/*Navigation bar at header */}
-            <div className="Head">
-                <h1>Saline Academie</h1>
-            </div>
+            <Navbar/>   {/*Navigation bar at header */}
             {/*Searchbar with the data linked to it <Search/>*/}
+            <div className="content"></div>
             <Footer/>   {/*Footerbar at the footer */}
         </>
     )
