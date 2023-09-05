@@ -1,14 +1,15 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import Hero from "../Components/Hero";
 
 const Home = () =>  {
 
     return (
         <>
             <Navbar/>   {/*Navigation bar at header */}
-            {/*Searchbar with the data linked to it <Search/>*/}
-            <div className="content"></div>
+            <Hero/>     {/*Hero section at the top */}
+            <div className="Content">
             <Footer/>   {/*Footerbar at the footer */}
         </>
     )

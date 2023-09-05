@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.Hero {
+    background: url(../../assets/hero.gif);
+    background-size: cover;
+    height: 92vh;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.Hero-Content   {
+    background: linear-gradient(90deg, rgba(0,0,0,0.1) 40%, rgba(255,255,255,0.5) 100%);;
+    display: flex;
+    color: $primary-50;
+    text-shadow: 2px 2px 10px $primary-500;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.Hero-Content > h1,h2 {
+    font-family: Playfair Display;
+}
