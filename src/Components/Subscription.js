@@ -11,8 +11,8 @@ const Subscription = () => {
                     <div className="Subscription-Item">
                         <h3>Abonnement Freemium</h3>
                         <ul>
-                        <li>✓ Accès aux premiers cours</li>
-                        <li>✓ Accès aux forum</li>
+                            <li>✓ Accès aux premiers cours</li>
+                            <li>✓ Accès aux forum</li>
                         </ul>
                         <p>Prix : 0€/mois</p>
                         <p>Choisir Freemium</p>
@@ -20,10 +20,10 @@ const Subscription = () => {
                     <div className="Subscription-Item">
                         <h3>Abonnement Premium</h3>
                         <ul>
-                        <li>✓ Accès de 1h avec un professeur par mois</li>
-                        <li>✓ Accès à tous les cours en ligne</li>
-                        <li>✓ Support par e-mail</li>
-                        <li>✓ Accès aux concours</li>
+                            <li>✓ Accès de 1h avec un professeur par mois</li>
+                            <li>✓ Accès à tous les cours en ligne</li>
+                            <li>✓ Support par e-mail</li>
+                            <li>✓ Accès aux concours</li>
                         </ul>
                         <p>Prix : 19.99€/mois</p>
                         <p>Choisir Premium</p>
