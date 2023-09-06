@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import CoursesSection from "../Components/CoursesSection";
-import Subscription from "../Components/Subscription";
+import SubscriptionModule from "../Components/SubscriptionModule";
 import Review from "../Components/Review";
 import CalltoAction from "../Components/CalltoAction";
 
@@ -14,7 +14,7 @@ const Home = () =>  {
             <Navbar/>
             <Hero/>
             <CoursesSection />
-            <Subscription />
+            <SubscriptionModule />
             <Review />
             <CalltoAction />
             <Footer/>
