@@ -50,6 +50,23 @@
     color: $secondary-300;
 }
 
+.Footer-element:last-child {
+    flex-direction: row;
+}
+
+.Footer-element:last-child > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.Footer-element:last-child > img:hover {
+    //from https://codepen.io/sosuke/pen/Pjoqqp
+    filter: invert(60%) sepia(20%) saturate(923%) hue-rotate(192deg) brightness(106%) contrast(98%);
+    
+}
+
 
 
 .Logo {

@@ -1,6 +1,10 @@
 import React from "react";
+import facebook from "../assets/socialMedia/facebook.svg";
+import instagram from "../assets/socialMedia/instagram.svg";
 
 const Footer = () =>{
+
+
     return(
         <>
             <div className="Footer">
@@ -18,6 +22,10 @@ const Footer = () =>{
                         <p>Privacy policy</p>
                         <p>Cookie policy</p>
                         <p>Accessibility</p>
+                    </div>
+                    <div className="Footer-element">
+                        <img src={facebook} alt="Facebook"/>
+                        <img src={instagram} alt="Instagram"/>
                     </div>
 
                 </div>

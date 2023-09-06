@@ -14,7 +14,7 @@ const Navbar = () =>{
                     <p>Courses</p>
                     <p>Blog</p>
                     <p>News</p>
-                    <p>Sign in</p>
+                    <p className="Sign">Sign in</p>
                 </div>
             </div>
         </>
