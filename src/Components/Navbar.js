@@ -14,7 +14,7 @@ const Navbar = () =>{
                     <p>Courses</p>
                     <p>Blog</p>
                     <p>News</p>
-                    <p className="Sign">Sign in</p>
+                    <p className="Transparent-Button">Sign in</p>
                 </div>
             </div>
         </>

@@ -7,9 +7,9 @@ const Hero = () => {
                 <div className="Hero-Content">
                     <h1>Cultivez vos talents</h1>
                     <h2>Le conservatoire en ligne pour tous !</h2>
-                    <div className="Hero-Content-Button">
-                        <p>S'inscrire</p>
-                    </div>
+                </div>
+                <div className="Hero-Content-Button">
+                    <p className="CalltoAction-Button">S'inscrire</p>
                 </div>
             </div>
         </>

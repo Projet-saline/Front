@@ -38,12 +38,6 @@
     color: $secondary-300;
 }
 
-.Menu > .Sign:hover {
-    background-color: $primary-50;
-    color: $primary-500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
 
 .Logo {
     width: 30%;
@@ -54,12 +48,6 @@
     margin-left: 5%;
 }
 
-.Sign {
-    border: solid 1px $primary-50;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
 
 
 /* Mobile variant */

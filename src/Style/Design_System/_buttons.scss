@@ -1,0 +1,27 @@
+.Transparent-Button {
+    border: solid 1px $primary-50;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Transparent-Button:hover {
+    background-color: $primary-50;
+    color: $primary-500 !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.CalltoAction-Button {
+    margin-right: 5rem;
+    background-color: $primary-500;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.CalltoAction-Button:hover {
+    background-color: $success-400;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}

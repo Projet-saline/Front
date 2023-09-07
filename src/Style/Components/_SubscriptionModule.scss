@@ -1,15 +1,39 @@
 .Submodule-Content {
     height: 50vh;
     width: 100%;
-    background-color: $primary_400;
-
+    background: $primary_400;
+    background: linear-gradient(180deg, rgba($primary-500,0.9) 0%, $primary_400 5%,$primary_400, 95%, rgba($primary-500,0.9) 100%);
+    display: flex;
+    flex-direction: row;
+    color: $primary_50;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .Submodule-Content-Left {
+    width: 40%;
+    height: auto;
+    background: url(../../assets/sheet.gif);   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.Submodule-Content-Right {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; 
+    padding: 2rem;
+    text-align: right; 
 
     
-    img {
-        width: 40%;
-        height: 100%;
+
+    p:last-child {
+        margin-top: 5%;
     }
 }
+
