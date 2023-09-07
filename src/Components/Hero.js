@@ -9,7 +9,6 @@ const Hero = () => {
                     <h2>Le conservatoire en ligne pour tous !</h2>
                     <div className="Hero-Content-Button">
                         <p>S'inscrire</p>
-                        <p>Jouer la video</p>
                     </div>
                 </div>
             </div>
