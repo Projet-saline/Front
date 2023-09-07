@@ -1,18 +1,23 @@
+
+// Button for the "normal" actions
 .Transparent-Button {
     border: solid 1px $primary-50;
     border-radius: 0.5rem;
     padding: 0.5rem;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Transparent-Button:hover {
     background-color: $primary-50;
     color: $primary-500 !important;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+
+// Button for call to actions
 .CalltoAction-Button {
-    margin-right: 5rem;
     background-color: $primary-500;
     border-radius: 0.5rem;
     padding: 0.8rem;
@@ -23,5 +28,6 @@
 .CalltoAction-Button:hover {
     background-color: $success-400;
     transform: scale(1.1);
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }

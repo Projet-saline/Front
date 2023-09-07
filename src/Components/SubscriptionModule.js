@@ -7,7 +7,7 @@ const SubscriptionModule = () => {
                 <div className="Submodule-Content-Left">
                 </div>
                 <div className="Submodule-Content-Right">
-                    <p>Check our prices for the courses you've always dreamt of !</p>
+                    <h4>Check our prices for the courses you've always dreamt of !</h4>
                     <p className="Transparent-Button" >See the subscribe page →</p>
                 </div>
             </div>

@@ -59,6 +59,7 @@
     height: 1.5rem;
     margin-left: 2rem;
     padding-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .Footer-element:last-child > img:hover {
@@ -70,12 +71,13 @@
 
 
 .Logo {
-    width: 30%;
+    width:fit-content;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     margin-left: 5%;
+    cursor: pointer;
 }
 
 /* Mobile variant */

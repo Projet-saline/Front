@@ -17,7 +17,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 2rem;
 }
 
 .Submodule-Content-Right {
@@ -27,12 +26,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end; 
-    padding: 2rem;
     text-align: right; 
-
+    word-wrap: break-word;
+    margin-left: 5rem;
     
 
-    p:last-child {
+    p {
         margin-top: 5%;
     }
 }
