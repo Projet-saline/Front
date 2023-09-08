@@ -64,7 +64,7 @@
 
 .Footer-element:last-child > img:hover {
     //from https://codepen.io/sosuke/pen/Pjoqqp
-    filter: invert(60%) sepia(20%) saturate(923%) hue-rotate(192deg) brightness(106%) contrast(98%);
+    filter: invert(60%) sepia(20%) saturate(923%) hue-rotate(192deg) brightness(160%) contrast(98%);
     
 }
 
@@ -79,6 +79,7 @@
     margin-left: 5%;
     cursor: pointer;
 }
+
 
 /* Mobile variant */
 

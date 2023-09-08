@@ -1,61 +1,29 @@
 import React from "react";
-import Slider from "react-slick";
+import CarouselReview from "./Carousel";
 
 
-// Données factices pour les avis (vous pouvez remplacer par de vraies données)
-const reviewsData = [
+let prop = [
     {
-        id: 1,
-        title: "Excellent cours !",
-        content: "J'ai adoré ce cours. Le professeur était très compétent, et j'ai appris beaucoup de choses utiles. Je le recommande vivement.",
-        studentName: "Alice Johnson",
+        name: "John",
+        title: "super",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
         rating: 5,
+        face: "/assets/reviews_props/John.jpg"
     },
     {
-        id: 2,
-        title: "Très instructif",
-        content: "Ce cours m'a beaucoup aidé à améliorer mes compétences. Le matériel était bien présenté, et les exercices pratiques étaient très utiles.",
-        studentName: "Bob Smith",
-        rating: 4,
+        name: "Pauline",
+        title: "bof",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+        rating: 3,
+        face: "/assets/reviews_props/Pauline.jpg"
+
     },
-    // Ajoutez plus d'avis ici...
 ];
 
-const Review = () => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 768, // Répondre à l'affichage mobile
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-        ],
-    };
 
+const Review = () => {
     return (
-        <div className="reviews-container">
-            <h2>Avis des Élèves</h2>
-            <Slider {...settings}>
-                {reviewsData.map((review) => (
-                    <div key={review.id} className="review-card">
-                        <div className="rating">
-                            {Array.from({ length: review.rating }, (_, index) => (
-                                <span key={index} className="star"></span>
-                            ))}
-                        </div>
-                        <h3>{review.title}</h3>
-                        <p>{review.content}</p>
-                        <p className="student-name">{review.studentName}</p>
-                    </div>
-                ))}
-            </Slider>
-        </div>
+        <CarouselReview items={prop} />
     );
 };
 
