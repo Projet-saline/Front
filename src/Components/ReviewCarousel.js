@@ -102,20 +102,20 @@ const ReviewCarousel = ({ items }) => {
 
         {currentIndex + 1 < items.length && ( 
           <div className="Carousel-item">
-            <h3>{items[currentIndex + 1].name}</h3>
-            <h4>{items[currentIndex + 1].title}</h4>
-            <p>{items[currentIndex + 1].text}</p>
-            <div className="StarsContainer">
-              {[1, 2, 3, 4, 5].map((rating, index) => (
-                <img
-                  src={Star}
-                  alt="star"
-                  className={`Star ${rating <= items[currentIndex + 1].rating ? "Yellow" : "Grey"}`}
-                  key={index}
-                />
-              ))}
-            </div>
+          <p>{items[currentIndex + 1].name}</p>
+          <div className="StarsContainer">
+            {[1, 2, 3, 4, 5].map((rating, index) => (
+              <img
+                src={Star}
+                alt="star"
+                className={`Star ${rating <= items[currentIndex + 1].rating ? "Yellow" : "Grey"}`}
+                key={index}
+              />
+            ))}
           </div>
+          <p>{items[currentIndex + 1].text}</p>
+          <p>{items[currentIndex + 1].date}</p>
+        </div>
         )}
       </div>
       <div className="Carousel-indicators">
