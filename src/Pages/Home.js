@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import CoursesSection from "../Components/CoursesSection";
 import SubscriptionModule from "../Components/SubscriptionModule";
-import Review from "../Components/Review";
+import ReviewCarousel from "../Components/ReviewCarousel";
 import CalltoAction from "../Components/CalltoAction";
 
 const Home = () =>  {
@@ -15,7 +15,7 @@ const Home = () =>  {
             <Hero/>
             <CoursesSection />
             <SubscriptionModule />
-            <Review />
+            <ReviewCarousel />
             <CalltoAction />
             <Footer/>
         </>
