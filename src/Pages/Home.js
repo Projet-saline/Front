@@ -5,7 +5,7 @@ import Hero from "../Components/Hero";
 import CoursesSection from "../Components/CoursesSection";
 import SubscriptionModule from "../Components/SubscriptionModule";
 import ReviewCarousel from "../Components/ReviewCarousel";
-import CalltoAction from "../Components/CalltoAction";
+import NewsSection from "../Components/NewsSection";
 
 const items = [
     {
@@ -13,14 +13,12 @@ const items = [
         date: "01/01/2021",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
         rating: 5,
-        face: "John.jpg"
     },
     {
         name: "Pauline",
         date: "01/01/2021",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
         rating: 3,
-        face: "Pauline.jpg"
   
     },
     {
@@ -28,15 +26,12 @@ const items = [
         date: "01/01/2021",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
         rating: 1,
-        face: "John.jpg"
     },
     {
         name: "Celine",
         date: "01/01/2021",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-        rating: 4,
-        face: "Pauline.jpg"
-  
+        rating: 4,  
     }
   ];
 
@@ -49,7 +44,7 @@ const Home = () =>  {
             <CoursesSection />
             <SubscriptionModule />
             <ReviewCarousel items={items} />
-            <CalltoAction />
+            <NewsSection />
             <Footer/>
         </>
     )

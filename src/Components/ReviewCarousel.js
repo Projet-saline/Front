@@ -137,9 +137,10 @@ ReviewCarousel.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
       rating: PropTypes.number.isRequired,
+      date : PropTypes.string.isRequired,
+      text  : PropTypes.string.isRequired,
+    
     })
   ).isRequired,
 };
