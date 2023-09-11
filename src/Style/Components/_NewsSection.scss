@@ -1,7 +1,18 @@
 // Classes names : NewsContainer, NewsItem, NewsText
+.News {
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(180deg, rgba($primary-500,0.9) 0%, $primary_400 5%,$primary_400, 98%, rgba($primary-500,0.9) 100%);
+}
+
 
 .NewsContainer {
-    height: 70vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -9,27 +20,36 @@
     align-items: center;
     background-color: $primary-400;
     color: $primary-50;
-    padding: 5rem;
+    padding-bottom: 5rem;
 }
 
 .NewsItem {
-    height: 100%;
+    height: calc(100% - 10rem) ;
     width: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    background-color: $primary-50;
-    color: $primary-400;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    justify-content: space-around;
+    align-self: auto;
+    color: $primary-50;
     overflow: hidden;
+    background-color: rgba($primary-500, 0.3);
+    transition: all 0.2s ease-in-out;
 
     img {
         height: auto;
-        width: 100%;
+        width: 10rem;
+        border-right: 3px solid $primary-50;
+        padding-right: 2rem;
     }
+
+
+}
+
+.NewsItem:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 
 }
 

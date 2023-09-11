@@ -6,6 +6,7 @@ import CoursesSection from "../Components/CoursesSection";
 import SubscriptionModule from "../Components/SubscriptionModule";
 import ReviewCarousel from "../Components/ReviewCarousel";
 import NewsSection from "../Components/NewsSection";
+import {TextCut, Cut} from "../Components/Cut";
 
 const items = [
     {
@@ -41,6 +42,8 @@ const Home = () =>  {
         <>
             <Navbar/>
             <Hero/>
+            <Cut/>
+            <TextCut/>
             <CoursesSection />
             <SubscriptionModule />
             <ReviewCarousel items={items} />
