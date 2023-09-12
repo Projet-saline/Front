@@ -27,7 +27,7 @@ const TextCut = () => {
 
                     Why don't you join the best online courses with world class teachers? We offer a wide range of courses for all levels, from beginner to advanced. Our courses are designed to help you learn at your own pace and in the comfort of your own home. You can choose from a variety of instruments, including piano, guitar, violin, and more. We also offer courses in music theory and composition. So whether you're looking for a new hobby or want to take your skills to the next level, we have something for everyone.
                 </p>
-                <p className="Join Transparent-Button">Join now</p>
+                <p className="Join CalltoAction-Button">Join now</p>
             </div>
         
         </>

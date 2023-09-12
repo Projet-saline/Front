@@ -1,12 +1,26 @@
 .Courses {
     width: 100%;
-    height: fit-content;
+    height: f;
     background-color: $primary-500;
-    padding-top: 10%;
+    padding-top: 5rem;
     padding-bottom: 10%;
     overflow-y:hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+.Intro {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+    font-size: 1.2rem;
+
+
+
 
 }
 

@@ -77,7 +77,7 @@ const ReviewCarousel = ({ items }) => {
 
   return (
     <div className="Carousel-wrapper">
-      
+      <h2>Our students reviews</h2>
       <div
         className="Carousel-container"
         onTouchStart={handleTouchStart}
