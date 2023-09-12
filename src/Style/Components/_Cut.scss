@@ -1,5 +1,5 @@
 .CutContainer {
-    height: 20vh;
+    height: fit-content;
     width: 100%;
     background-color: $primary-500;
     display: flex;
@@ -9,6 +9,8 @@
     padding-top: 2rem;
     p { 
         margin: 0;
+        overflow-y: hidden;
+        word-wrap: break-word;
     }
 
     p:first-child {
@@ -54,14 +56,22 @@
 }
 
 .TextCutContainer {
-
+    display: flex;
+    flex-direction: column;
     background-color: $primary-500;
 
-    p{
+    p:first-child{
         color: $primary-50;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 0;
-        padding: 0rem 5rem 0rem 5rem;
+        padding: 0rem 10rem 0rem 10rem;
     }
-
+    .Join {
+        align-self: center;
+        margin-top:2rem ;
+        width: fit-content;
+        
+    }
 }
+
+

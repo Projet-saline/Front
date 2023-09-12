@@ -1,14 +1,15 @@
 .card {
     width: 20%;
-    height: 20%;
+    height: fit-content;
     margin: 0 auto;
     border-radius: 5px;
+    
     
 }
 
 .card-content {
     width: 80%;
-    height: 50%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +24,7 @@
     color: $primary-50;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
+
 }
 .card-image {
     display: flex;
@@ -41,4 +43,26 @@
     background-color: $tertiary-400;
     transform: scale(1.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
 }

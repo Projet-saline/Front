@@ -12,7 +12,7 @@
 
 
 .NewsContainer {
-    height: 50vh;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -21,10 +21,12 @@
     background-color: $primary-400;
     color: $primary-50;
     padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 .NewsItem {
     height: calc(100% - 10rem) ;
+    height: 100%;
     width: 30%;
     display: flex;
     flex-direction: row;
@@ -35,6 +37,7 @@
     overflow: hidden;
     background-color: rgba($primary-500, 0.3);
     transition: all 0.2s ease-in-out;
+    padding: 2rem 0rem 2rem 0rem;
 
     img {
         height: auto;

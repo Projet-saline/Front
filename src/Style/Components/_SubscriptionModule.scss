@@ -1,5 +1,5 @@
 .Submodule-Content {
-    height: 50vh;
+    height: fit-content;
     width: 100%;
     background: $primary_400;
     background: linear-gradient(180deg, rgba($primary-500,0.9) 0%, $primary_400 5%,$primary_400, 95%, rgba($primary-500,0.9) 100%);
@@ -35,4 +35,3 @@
         margin-top: 5%;
     }
 }
-
