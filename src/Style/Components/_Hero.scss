@@ -1,0 +1,40 @@
+.Hero {
+    background: 
+    linear-gradient(90deg, rgba(0,0,0,0.1) 40%, rgba(255,255,255,0.5) 100%),
+    url(../../assets/hero.gif);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-shadow: 2px 2px 10px rgba($primary-500,0.3);
+    color: $primary-50;
+    overflow-y: hidden;
+
+}
+
+.Hero-Content   {
+    
+    
+    height: calc(50% + 5vh);
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    h1,h2 {
+        margin-right:5rem;
+        font-family: Playfair Display;
+    }
+}
+.Hero-Content-Button {
+    
+    height: calc(50% - 5vh);
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 3rem;
+
+}
+

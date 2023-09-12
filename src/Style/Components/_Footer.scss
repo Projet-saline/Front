@@ -1,0 +1,105 @@
+.Footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: $primary-500;
+    color: $primary-50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    p {
+        font-size: 0.8rem;
+        margin: 0;
+        
+    }
+}
+
+.Footer-menu {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+
+.Footer-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 5vw;
+
+}
+
+.Footer-element > p {
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+    text-align: right;
+    cursor: pointer;
+}
+
+.Footer-element > p:hover {
+    color: $secondary-300;
+}
+
+.Footer-element:last-child {
+    flex-direction: row;
+}
+
+.Footer-element:last-child > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.Footer-element:last-child > img:hover {
+    //from https://codepen.io/sosuke/pen/Pjoqqp
+    filter: invert(60%) sepia(20%) saturate(923%) hue-rotate(192deg) brightness(160%) contrast(98%);
+    
+}
+
+
+
+.Logo {
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+
+/* Mobile variant */
+
+ @media screen and (max-width: 768px) {
+    .Footer {
+        width: 100vw;
+        height: 5vh;
+        background-color: $primary-500;
+        color: $primary-50;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    }
+}

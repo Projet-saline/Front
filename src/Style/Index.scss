@@ -1,3 +1,22 @@
-@import "./_global.scss";
-@import "./Components/Header.scss";
-@import "./Home.scss";
+// Design System
+@import "./Design_System/colors.scss";
+@import "./Design_System/_global.scss";
+@import "./Design_System/buttons.scss";
+@import "./Design_System/typography.scss";
+@import "./Design_System/fonts.scss";
+
+// Components
+@import "./Components/ReviewCarousel.scss";
+@import "./Components/NewsSection.scss";
+@import "./Components/Footer.scss";
+@import "./Components/Hero.scss";
+@import "./Components/coursesSection.scss";
+@import "./Components/coursesCard.scss";
+@import "./Components/Subscription.scss";
+@import "./Components/CalltoAction.scss";
+@import "./Components/SubscriptionModule.scss";
+@import "./Components/Navbar.scss";
+@import "./Components/Cut.scss";
+
+// Pages
+@import "./Pages/Home.scss";
