@@ -24,51 +24,51 @@ const App = () => {
         <Routes>
           <Route 
             exact path="/" 
-            element={<Home />} 
+            element={<Home />} // Done
           />
           <Route
             path="/about"
-            element={<About />}
+            element={<About />} // Maedeh
           />
           <Route
             path="/contact"
-            element={<Contact />}
+            element={<Contact />} // Maedeh
           />
           <Route
             path="/news"
-            element={<News />}
+            element={<News />} // Maedeh
           />
           <Route
             path="/news/:id"
-            element={<NewsArticle />}
+            element={<NewsArticle />} // A faire
           />
           <Route
             path="/login"
-            element={<Login />}
+            element={<Login />} // Done
           />
           <Route
             path="/help"
-            element={<Help />}
+            element={<Help />} //Maedeh
           />
           <Route  
             path="/courses"
-            element={<Courses />}
+            element={<Courses />} //A faire
           />
           <Route
             path="/courses/:id"
-            element={<Course />}
+            element={<Course />} // A faire
           />
           <Route
             path="/blog"
-            element={<Blog />}
+            element={<Blog />} // A faire
           />
           <Route
             path="/blog/:id"
-            element={<BlogArticle />}
+            element={<BlogArticle />} // A faire
           />
           <Route
             path="*"
-            element={<NotFound />}
+            element={<NotFound />} // Done
           />
         </Routes>
         
