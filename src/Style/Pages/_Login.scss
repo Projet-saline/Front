@@ -3,6 +3,7 @@
     width: 100vw;
     //use the svg for the background
     background-image: url("../../assets/background-sheet.svg");
+    background-color: rgba($primary-500,0.2);
 
 }
 
@@ -12,7 +13,7 @@
     align-items: center;
     justify-content: center;
     height: calc(85vh - 2rem); //Size of footer
-    background-color: $primary-500;
+    background-color: rgba($primary-500,0.9);
     margin-left: 25vw;
     margin-right: 25vw;
 
