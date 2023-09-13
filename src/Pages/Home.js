@@ -40,7 +40,7 @@ const Home = () =>  {
 
     return (
         <>
-            <Navbar/>
+            <Navbar Style={false}/>
             <Hero/>
             <Cut/>
             <TextCut/>

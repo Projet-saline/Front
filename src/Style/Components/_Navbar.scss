@@ -20,6 +20,7 @@
         margin: 0;
     }
 }
+
 .Menu {
     width: 70%;
     display: flex;
@@ -46,6 +47,11 @@
     justify-content: flex-start;
     align-items: center;
     margin-left: 5%;
+}
+
+.Full {
+
+    background-color: $primary-500;
 }
 
 
