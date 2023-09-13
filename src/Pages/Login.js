@@ -13,21 +13,19 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const lockoutTime = 10 * 60 * 1000; // 10 minutes en millisecondes
+    const lockoutTime = 10 * 60 * 1000;
     const lastAttemptTime = localStorage.getItem('time');
     const attempts = localStorage.getItem('attempts') || 0;
 
-    // Vérifier si l'utilisateur est toujours dans la période de verrouillage
     if (lastAttemptTime && Date.now() - lastAttemptTime < lockoutTime) {
         setMessage('Veuillez réessayer dans quelques minutes.');
         return;
     }
 
-    // Vérifier si l'utilisateur a dépassé le nombre d'essais
     if (attempts >= 3) {
         setMessage('Vous avez atteint le nombre maximum de tentatives. Veuillez réessayer dans 10 minutes.');
         localStorage.setItem('time', Date.now());
-        localStorage.setItem('attempts', 0); // Réinitialiser le compteur après verrouillage
+        localStorage.setItem('attempts', 0); 
         return;
     }
 
@@ -38,12 +36,14 @@ const Login = () => {
     .then(response => {
         if (response.data.success) {
             setMessage('Connexion réussie!');
-            localStorage.removeItem('attempts'); // Supprimer le compteur en cas de succès
-        } else {
+            localStorage.removeItem('attempts');
+        } 
+        else {
             setMessage('Email ou mot de passe incorrect!');
-            localStorage.setItem('attempts', Number(attempts) + 1); // Augmenter le compteur en cas d'échec
+            localStorage.setItem('attempts', Number(attempts) + 1);
+    
         }
-    })
+        })
     .catch(error => {
         console.error('Il y a eu une erreur lors de la connexion:', error);
         setMessage('Erreur de connexion. Veuillez réessayer.');
@@ -52,7 +52,7 @@ const Login = () => {
 
 
 
-  return (
+return (
     <div className="Login">
         <Navbar Style={true} />
             <div className="login-container">
