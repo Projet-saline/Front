@@ -13,7 +13,7 @@ const Footer = () =>{
                 </div>
                 <div className="Footer-menu">
                     <div className="Footer-element">
-                        <p>About us</p>
+                        <p>News</p>
                         <p>Contact us</p>
                         <p>Support</p>
                     </div>

@@ -7,7 +7,7 @@ $primary-400 : #454962;
 $primary-300 : #64677c;
 $primary-200 : #9497a5;
 $primary-100 : #b7b9c2;
-$primary-50 : #e8e8eb;
+$primary-50 : #f6f6fc;
 
 $secondary-500 : #5d7cfa;
 $secondary-400 : #7d96fb;
@@ -50,7 +50,6 @@ $focus-50 : #f2f9ff;
     padding: 0%;
     margin: 0%;
     font-family: Montserrat;
-    overflow-x: hidden;
 
     // Scrollbar styles for firefox
     scrollbar-width: thin;
@@ -81,11 +80,12 @@ $focus-50 : #f2f9ff;
 h1 {
     font-size: 56px;
     margin-right: 5rem;
+    padding-bottom: 1rem;
 }
 
 h2 {
     font-size: 40px;
-    margin-right: 5rem;
+    // margin-right: 5rem;
 }
 
 h3 {
@@ -95,12 +95,13 @@ h3 {
 
 h4 {
     font-size: 28px;
-    margin-right: 5rem;
 }
 
 h5 {
     font-size: 26px;
     margin-right: 5rem;
+    padding: 1rem 0;
+
 }
 
 h6 {
@@ -110,7 +111,12 @@ h6 {
 
 p {
     font-size: 16px;
-    margin-right: 5rem;
+    // margin-right: 5rem;
+}
+li {
+
+    font-size: 16px;
+
 }
 
 
