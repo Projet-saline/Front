@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const CoursesCard = ({ imageSrc, title, description, name }) => {
 
-    if (description.length > 500) {
-        description = description.substring(0, 500) + "...";
+    if (description.length > 200) {
+        description = description.substring(0, 200) + "...";
     };
 
     return (

@@ -83,23 +83,86 @@
 
 /* Mobile variant */
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 478px){
     .Footer {
         width: 100vw;
-        height: 5vh;
+        height: 15vh;
         background-color: $primary-500;
         color: $primary-50;
         padding: 1rem;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
         
         h1 {
-            font-size: 2rem;
+            font-size: 1rem;
             margin: 0;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             margin: 0;
+            
         }
     }
+    
+    .Footer-menu {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 5%;
+    }
+    
+    
+    .Footer-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 5vw;
+    
+    }
+    
+    .Footer-element > p {
+        margin-left: 2rem;
+        padding-bottom: 1rem;
+        text-align: right;
+        cursor: pointer;
+    }
+    
+    .Footer-element > p:hover {
+        color: $secondary-300;
+    }
+    
+    .Footer-element:last-child {
+        flex-direction: row;
+    }
+    
+    .Footer-element:last-child > img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 2rem;
+        padding-bottom: 0.5rem;
+        cursor: pointer;
+    }
+    
+    .Footer-element:last-child > img:hover {
+        //from https://codepen.io/sosuke/pen/Pjoqqp
+        filter: invert(60%) sepia(20%) saturate(923%) hue-rotate(192deg) brightness(160%) contrast(98%);
+        
+    }
+    
+    
+    
+    .Logo {
+        width:fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 1rem;
+        cursor: pointer;
+    }  
 }

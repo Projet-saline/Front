@@ -1,7 +1,14 @@
 import React from "react";
-
+import { useState } from "react";
 
 const Navbar = () =>{
+    const[isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const menuItems = ["Courses", "Blog", "News", "Sign in","Contact"];
 
 
     return(
@@ -16,6 +23,19 @@ const Navbar = () =>{
                     <p>News</p>
                     <p className="Transparent-Button">Sign in</p>
                 </div>
+                <button className="Burger-Button" onClick={toggleMenu}>
+                    <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
+                    <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
+                    <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
+                    <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
+                </button>
+            </div>
+            <div className={`Burger-Menu ${isMenuOpen ? "open" : ""}`}>
+                <ul>
+                    {menuItems.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
             </div>
         </>
     );

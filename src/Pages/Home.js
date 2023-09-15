@@ -8,6 +8,7 @@ import ReviewCarousel from "../Components/ReviewCarousel";
 import NewsSection from "../Components/NewsSection";
 import {TextCut, Cut} from "../Components/Cut";
 
+
 const items = [
     {
         name: "John",

@@ -35,3 +35,43 @@
         margin-top: 5%;
     }
 }
+
+@media screen and (max-width: 495px){
+    .Submodule-Content {
+        height: fit-content;
+        width: 100%;
+        background: $primary_400;
+        background: linear-gradient(180deg, rgba($primary-500,0.9) 0%, $primary_400 5%,$primary_400, 95%, rgba($primary-500,0.9) 100%);
+        display: flex;
+        flex-direction: row;
+        color: $primary_50;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .Submodule-Content-Left {
+        width: 50%;
+        height: auto;
+        background: url(../../assets/sheet.gif);   
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .Submodule-Content-Right {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end; 
+        text-align: right; 
+        word-wrap: break-word;
+        margin-left: 5rem;
+        
+    
+        p {
+            margin-top: 5%;
+        }
+    }
+}
