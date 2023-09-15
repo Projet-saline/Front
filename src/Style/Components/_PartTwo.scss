@@ -1,0 +1,54 @@
+// .part-Two {
+//   display: flex;
+//   flex-direction: column;
+//   height: 50%;
+//   padding: 3rem 6rem;
+//   background-color: $primary-400;
+//   color: $primary-50 ;
+//   text-align: justify;
+//   align-items: center;
+//   }
+//   .Register-Button {
+//   width: 19rem;
+//   margin: 0 auto;
+//   text-align: center;
+//   align-items: center;
+//   }
+//   .btn {
+//     margin-top: 2rem;
+//   }
+
+// responsive : 
+/* Common styles for all screen sizes */
+.part-Two {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 6rem;
+  background-color: $primary-400;
+  color: $primary-50;
+  text-align: justify;
+  align-items: center;
+}
+
+.Register-Button {
+  width: 19rem;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 2rem;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .part-Two {
+    padding: 2rem;
+  }
+
+  .Register-Button {
+    width: 100%;
+    max-width: 19rem;
+  }
+}
