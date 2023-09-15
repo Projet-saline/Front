@@ -1,34 +1,55 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-// import Footer from "../Components/Footer";
-import About from "../Pages/About";
+import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import CoursesSection from "../Components/CoursesSection";
 import SubscriptionModule from "../Components/SubscriptionModule";
-// import ReviewCarousel from "../Components/ReviewCarousel";
-import CalltoAction from "../Components/CalltoAction";
-// import Faq from "../Components/PageFaq";
-import { ContactUs } from "./ContactUs"
-import MainFaq from "../Components/FaqContainer/MainFaq";
-// import PresentationProf from "../Components/PresentationProf";
-// import PageFaq from "../Components/PageFaq";
+import ReviewCarousel from "../Components/ReviewCarousel";
+import NewsSection from "../Components/NewsSection";
+import {TextCut, Cut} from "../Components/Cut";
+
+
+const items = [
+    {
+        name: "John",
+        date: "01/01/2021",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+        rating: 5,
+    },
+    {
+        name: "Pauline",
+        date: "01/01/2021",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+        rating: 3,
+  
+    },
+    {
+        name: "Pierre",
+        date: "01/01/2021",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+        rating: 1,
+    },
+    {
+        name: "Celine",
+        date: "01/01/2021",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
+        rating: 4,  
+    }
+  ];
 
 const Home = () =>  {
 
     return (
         <>
-             {/* <PresentationProf /> */}
-            <MainFaq />
-            <ContactUs />
-            <Navbar/>
+            <Navbar Style={false}/>
             <Hero/>
+            <Cut/>
+            <TextCut/>
             <CoursesSection />
             <SubscriptionModule />
-            {/* <ReviewCarousel /> */}
-            <CalltoAction /> 
-             <About />
-             {/* <Footer/>  */}
-             
+            <ReviewCarousel items={items} />
+            <NewsSection />
+            <Footer/>
         </>
     )
 }
