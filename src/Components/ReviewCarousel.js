@@ -4,6 +4,10 @@ import { propTypes } from "react-bootstrap/esm/Image";
 
 const ReviewCarousel = ({ images }) => {
 
+import { propTypes } from "react-bootstrap/esm/Image";
+
+const ReviewCarousel = ({ images }) => {
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(null);
 
@@ -30,6 +34,36 @@ const ReviewCarousel = ({ images }) => {
     // Ici le delta qui calcul l'avancée du doit sur l'écran par rapport a startX
     const deltaX = event.changedTouches[0].clientX - startX;
 
+    //Testons savoir si le doigt est bien sur l'écran
+    switch (startX) {
+      //Non le doigt n'est pas sur l'écran
+      case null:
+        break;
+      //Oui le doigt est sur l'écran
+      default:
+        //Testons savoir si le doigt a bougé
+        switch (deltaX) {
+          //Oui le doigt a bougé de plus de 50px vers la droite
+          case deltaX > 50:
+            setCurrentIndex((prevIndex) =>
+              prevIndex <= 0 ? images.length - 2 : prevIndex - 2
+            );
+            break;
+          //Oui le doigt a bougé de plus de 50px vers la gauche
+          case deltaX < -50:
+            setCurrentIndex((prevIndex) =>
+              prevIndex >= images.length - 2 ? 0 : prevIndex + 2
+            );
+            break;
+          //Le doigt a fait un mouvement inattendu (moins de 50px, ou vers le haut ou le bas, ou vers la gauche et la droite en même temps ...)
+          default:
+            console.log("Unexpected swipe direction");
+            break;
+
+        };
+        break;
+    };
+    //On remet startX à null pour pouvoir recommencer  
     //Testons savoir si le doigt est bien sur l'écran
     switch (startX) {
       //Non le doigt n'est pas sur l'écran
@@ -149,6 +183,7 @@ const ReviewCarousel = ({ images }) => {
         )}
       </div>
       <div className="Carousel-indicators">
+          {Array.from({ length: Math.ceil(images.length / 2) }).map((_, idx) => (
           {Array.from({ length: Math.ceil(images.length / 2) }).map((_, idx) => (
               <div
                   key={idx}

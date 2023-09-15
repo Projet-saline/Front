@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
 //Import of pages
 import Home from "./Pages/Home";
 import * as router from "react-router-dom";
+import "./Style/Index.scss";
 
 const App = () => {
   return (
