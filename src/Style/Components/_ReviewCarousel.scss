@@ -104,3 +104,28 @@
 .Carousel-dot.active {
     background-color: $secondary-500;
 }
+
+
+@media screen and (max-width: 495px){
+    .Carousel-item {
+        width: 50%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+    .Carousel-container {
+        flex-direction: column;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .Carousel-wrapper {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        h2{
+            margin: auto ;
+        }
+    }
+    .Carousel-indicators {
+        padding-bottom: 0rem;
+    }
+}

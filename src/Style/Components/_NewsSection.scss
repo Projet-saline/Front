@@ -63,3 +63,41 @@
     text-align: center;
 
 }
+
+@media screen and (max-width: 495px){
+    .NewsContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .NewsItem {
+        width: 80%;
+        height: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .NewsItem img {
+        width: 5rem;
+        height: auto;
+        border-right: 0px solid $primary-50;
+        padding-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .NewsText {
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .News {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        h1{
+            font-size: 2rem;
+            font-weight: 700;
+            margin: auto;
+        }
+    }
+}

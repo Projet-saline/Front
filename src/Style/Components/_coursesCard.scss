@@ -43,6 +43,7 @@
     background-color: $tertiary-400;
     transform: scale(1.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
 
 .card-name {
@@ -65,4 +66,38 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-right: 0rem;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .card-name {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0rem;
+    }
+    
+    .card-description {
+        font-size: 1rem;
+        margin: 1rem;
+
+    }
+    
+    .card-title {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0rem;
+    }
+
+    .card {
+        width: 50%;
+        overflow-y: hidden;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
 }
