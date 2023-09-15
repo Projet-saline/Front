@@ -5,6 +5,19 @@ import {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
 import Home from "./Pages/Home";
 import * as router from "react-router-dom";
 import "./Style/Index.scss";
+import About from "../src/Pages/About";
+import {ContactUs} from "../src/Pages/ContactUs";
+import News from "./Components/NewsSection";
+import NewsArticle from "../src/Pages/NewsArticle";
+import Login from "../src/Pages/Login";
+import Courses from "../src/Pages/Courses";
+import Course from "../src/Pages/Course";
+import Blog from "../src/Pages/Blog";
+import BlogArticle from "../src/Pages/BlogArticle";
+import NotFound from "../src/Pages/NotFound";
+import Frequentlyquestions from "./Pages/Frequentlyquestions";
+  
+
 
 const App = () => {
   return (
@@ -21,7 +34,7 @@ const App = () => {
           />
           <Route
             path="/contact"
-            element={<Contact />} // Maedeh
+            element={<ContactUs />} // Maedeh
           />
           <Route
             path="/news"
@@ -36,8 +49,8 @@ const App = () => {
             element={<Login />} // Done
           />
           <Route
-            path="/help"
-            element={<Help />} //Maedeh
+            path="/faq"
+            element={<Frequentlyquestions />} //Maedeh
           />
           <Route  
             path="/courses"

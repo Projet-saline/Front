@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Footer from '../Components/Footer';
 
 export const ContactUs = () => {
   const form = useRef();
@@ -19,10 +20,9 @@ export const ContactUs = () => {
   return (
     <>
     <div className='ContatcUs-background'>
-      <div classname='title-container'>
     <h4 className='contactUs-Title'> Need more information ?
     <br /> Contact us here, and we will get back to you as soon as possible </h4>
-    </div>
+
     <form ref={form} onSubmit={sendEmail} className='form-Container'>
       {/* <label>Name</label> */}
       <input type="text" placeholder='Name' name="name" />
@@ -35,6 +35,7 @@ export const ContactUs = () => {
       <button type="submit" value="Submit Message" className='btn-form'> Send </button>
     </form>
     </div>
+    <Footer />
 
     </>
   );

@@ -37,17 +37,11 @@
 
 // responsive : 
 /* Common styles for all screen sizes */
-.AboutUs-Container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  line-height: 2rem;
-}
 
 /* Part One */
 .part-One {
   display: flex;
+  height: auto;
   padding: 3rem 3rem;
   text-align: center;
   align-items: center;

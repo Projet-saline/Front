@@ -6,9 +6,9 @@
     
 
     // Scrollbar styles for firefox
-    scrollbar-width: thin;
-    scrollbar-color: $primary-300 $primary-500;
-    word-wrap: break-word;
+    // scrollbar-width: thin;
+    // scrollbar-color: $primary-300 $primary-500;
+    // word-wrap: break-word;
 }
 
 
@@ -20,18 +20,18 @@ body {
 }
 
 // Scrollbar styles for chrome
-* ::-webkit-scrollbar {
-    width: 0.5rem;
-}
+// * ::-webkit-scrollbar {
+//     width: 0.5rem;
+// }
 
-* ::-webkit-scrollbar-track {
-    background: none;
-}
+// * ::-webkit-scrollbar-track {
+//     background: none;
+// }
 
-* ::-webkit-scrollbar-thumb {
-    border-radius: 1rem;
-    background-color: $primary-500;
-}
+// * ::-webkit-scrollbar-thumb {
+//     border-radius: 1rem;
+//     background-color: $primary-500;
+// }
 
 .root {
     display: flex;

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -20,13 +19,18 @@ const NewsArticle = () => {
     }, []);
 
     useEffect(() => {
-        axios.get(`localhost:3000/news`)
-            .then((response) => {
-                setArticle(response.data);
-            })
-            .catch((error) => {
-                console.error("Erreur lors de la récupération de l'article :", error);
-            });
+        fetch("http://localhost:3000/news/1").then((response) => 
+        {
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP! Statut: ${response.status}`);
+            }
+            return response.json(); // Parse la réponse JSON
+        }).then((data) => {
+            console.log(data);
+            setArticle(data);
+        }).catch((error) => {
+            console.error("Erreur:", error);
+        });
     }, [articleId]);
 
     return (

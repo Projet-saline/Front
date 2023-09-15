@@ -2,7 +2,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 import React, { useState } from 'react';
-import axios from 'axios';
+
 
 
 const Login = () => {
@@ -29,25 +29,43 @@ const Login = () => {
         return;
     }
 
-    axios.post('https://votre-api-url.com/login', {
+    const apiUrl = 'https://votre-api-url.com/login';
+
+    const requestData = {
         email: email,
-        password: password,
-    })
-    .then(response => {
-        if (response.data.success) {
-            setMessage('Connexion réussie!');
-            localStorage.removeItem('attempts');
-        } 
-        else {
-            setMessage('Email ou mot de passe incorrect!');
-            localStorage.setItem('attempts', Number(attempts) + 1);
+        password: password
+    };
     
-        }
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestData)
+    };
+    
+    fetch(apiUrl, requestOptions)
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('La requête a échoué');
+            }
         })
-    .catch(error => {
-        console.error('Il y a eu une erreur lors de la connexion:', error);
-        setMessage('Erreur de connexion. Veuillez réessayer.');
-    });
+        .then(data => {
+            if (data.success) {
+                setMessage('Connexion réussie!');
+                localStorage.removeItem('attempts');
+            } else {
+                setMessage('Email ou mot de passe incorrect!');
+                localStorage.setItem('attempts', Number(attempts) + 1);
+            }
+        })
+        .catch(error => {
+            console.error('Il y a eu une erreur lors de la connexion:', error);
+            setMessage('Erreur de connexion. Veuillez réessayer.');
+        });
+ 
 };
 
 
