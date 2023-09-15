@@ -1,0 +1,109 @@
+.Login {
+    height: 100vh;
+    width: 100vw;
+    //use the svg for the background
+    background-image: url("../../assets/background-sheet.svg");
+    background-color: rgba($primary-500,0.2);
+
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(80vh - 4rem); //Size of footer(15vh + 2rem) + header(5vh + 2rem) 
+    background-color: rgba($primary-500,0.9);
+    margin-top: calc(5vh + 2rem);
+    margin-left: 25vw;
+    margin-right: 25vw;
+
+    h2 {
+        text-align: center;
+        margin: 0%;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        overflow-y: hidden;
+        
+    }
+
+    form {
+        padding: 2rem;
+        overflow-y: hidden;
+
+        p:last-child{
+            cursor: pointer;
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+        }
+    }
+    
+
+    .separator {
+        overflow-y: hidden;
+    }
+    
+    
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.Action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    padding: 0;
+}
+
+input {
+    margin-top: 0.5rem ;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: $primary-400;
+    background-color: $primary-400;
+    color: $primary-50;
+    border-style: solid;
+    border-radius: 2px;
+
+}
+input:focus {
+    outline-width: 0px;
+    outline-style: solid;
+    outline-offset: 0px;
+
+}
+
+label {
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.separator {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    p:last-child{
+        padding-bottom: 2rem;
+        font-style: italic;
+        cursor: pointer;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+
+    }
+}

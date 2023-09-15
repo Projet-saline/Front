@@ -3,7 +3,7 @@ name: Tests React App
 on:
   push:
     branches:
-      - main
+      - master
       - pre-prod
 
 jobs:
