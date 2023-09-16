@@ -1,8 +1,16 @@
 version: '3'
+
 services:
-  react-app:
+  frontend:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3001:80"
+      - "${APP_PORT}:${APP_PORT2}"
+    networks:
+      - common-network
+
+networks:
+  common-network:
+    external:
+      name: common-network

@@ -28,11 +28,11 @@ const App = () => {
           />
           <Route
             path="/about"
-            element={<About />} // Maedeh
+            element={<About />} // Done
           />
           <Route
             path="/contact"
-            element={<Contact />} // Maedeh
+            element={<Contact />} // Done
           />
           <Route
             path="/news"
@@ -48,7 +48,7 @@ const App = () => {
           />
           <Route
             path="/help"
-            element={<Help />} //Maedeh
+            element={<Help />} // Done
           />
           <Route  
             path="/courses"

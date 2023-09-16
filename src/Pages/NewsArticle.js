@@ -1,33 +1,37 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { useParams } from 'react-router-dom';
 
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
+
+
 const NewsArticle = () => {
-    const [article, setArticle] = useState(null);
-    const [articleId, setArticleId] = useState(null);
+    const [article, setArticle] = useState([]);
+    const { id } = useParams();
+
+
+
+    
+
+
+    const getArticle = async () => {
+        const response = await fetch(`http://localhost:3000/news/${id}`);
+        const data = await response.json()
+        .then((data) => {
+            console.log(data);
+            setArticle(data);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
+    }
 
     useEffect(() => {
-        // Récupère l'ID de l'article à partir de l'URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const idFromUrl = urlParams.get("id");
-
-        if (idFromUrl) {
-            // Si l'ID est présent dans l'URL, met à jour l'état
-            setArticleId(idFromUrl);
-        }
-    }, []);
-
-    useEffect(() => {
-        axios.get(`localhost:3000/news`)
-            .then((response) => {
-                setArticle(response.data);
-            })
-            .catch((error) => {
-                console.error("Erreur lors de la récupération de l'article :", error);
-            });
-    }, [articleId]);
+            getArticle();
+        }, []);
+    
 
     return (
         <>
@@ -37,7 +41,7 @@ const NewsArticle = () => {
                         <h2 className="article-title">{article.title}</h2>
                         <p className="article-date">{`Date de publication : ${article.date}`}</p>
                         <p className="article-content">{article.content}</p>
-                        <a className="article-link" href={`/article/${articleId}`}>Lire la suite</a>
+                        <a className="article-link" href={`/article/${id}`}>Lire la suite</a>
                     </>
                 ) : (
                     <div className="Loading">
