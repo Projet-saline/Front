@@ -29,6 +29,26 @@ export const data = [
     question: "How does video on demand work? ",
     answer:
     " Our video on demand offer allows you to rent the videos of your choice for a period of 3 months.",
+ },
+ {
+  question: "who are the teachers in our academy? ",
+  answer:
+  " The teachers of our masterclasses are all internationally renowned musicians, first prize winners, judges of major musical competitions and recognized professors. Each of them has a pedagogical experience, which is intended to transmit to the academicians their knowledge, acquired over the years.",
+},
+{
+  question: " Can I apply for a scholarship? ",
+  answer:
+  " Yes, you must apply when you fill out the application form. If your application is accepted, you will be eligible to receive a scholarship of at least €100 and up to 450€.",
+},
+{
+  question: "can minors register?",
+  answer:
+  " Yes, they must be accompanied by a responsible parent or legal guardian. If not, the signature of one or the other is required and a statement releasing the Saline royale Academy from all responsibility must be provided upon final registration of the student.",
+},
+{
+  question: "Where and when can I watch my recorded lessons? ",
+  answer:
+  "The recorded lessons are published on the Saline royale Academy platform several months after the academy: they need post-production, subtitles, and we follow a strict calendar to make sure we alternate publications between instruments. When your videos are online, we create a free access for you to watch them.",
 }
 ,
 

@@ -13,7 +13,7 @@ export default function Accordion({section, key}) {
       isOpen={isOpen}
       toggle={toggle}/>
       {isOpen && <TextSection text={section.answer} />}
-      <div className="underline"></div>
+       <div className="underline"></div> 
     </div>
     </>
   )

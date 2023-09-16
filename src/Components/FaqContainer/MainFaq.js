@@ -12,6 +12,10 @@ export default function MainFaq() {
       {data.map((section, index)=>(
             <Accordion key={index} section={section} />
         ))}
+        {/* <div className="faq-Footer">
+        <h2 className="main-title"> Didn't find your answer ? </h2>
+        <button type="submit" value="Submit Message" className='btn-faq'> contact us </button>
+        </div> */}
     </div>
     </>
   )

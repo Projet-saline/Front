@@ -36,13 +36,13 @@ const App = () => {
             path="/contact"
             element={<ContactUs />} // Maedeh
           />
+            <Route
+              path="/news/:id"
+              element={<NewsArticle />} // A faire
+            />
           <Route
             path="/news"
             element={<News />} // Maedeh
-          />
-          <Route
-            path="/news/:id"
-            element={<NewsArticle />} // A faire
           />
           <Route
             path="/login"

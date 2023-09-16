@@ -1,13 +1,17 @@
-
+body {
+  font-family: Playfair Display;
+}
 .faq-Container {
-  background-color: $primary-50;
-  color: $primary-500;
-  padding : 3rem 0 ;
+  height: 100vh;
+  font-family: Playfair Display;
+  background-color: $primary-500;
+  color: $primary-50;
+  padding : 4rem 0 ;
   margin: 0 auto;
 }
 
 .main-title {
-  margin: 20px 0 10px 0;
+  padding-bottom: 2rem;
   font-weight: 500;
   text-align: center;
   align-items: center;
