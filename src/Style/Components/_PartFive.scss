@@ -1,0 +1,65 @@
+/* Default styles for .part-five (Desktop) */
+.part-five {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: $primary-500;
+  color: $primary-50;
+  font-size: 1.5em;
+  flex-wrap: wrap;
+}
+
+/* Styles for .partFive-Content (Desktop) */
+.partFive-Content {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+/* Styles for .map-Container (Desktop) */
+.map-Container {
+  width: 50%;
+  height: 500px;
+  border-radius: 1rem;
+}
+
+/* Styles for .part-fivetext (Desktop) */
+.part-fivetext {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+/* Responsive adjustments for Mobile */
+@media screen and (max-width: 767px) {
+  /* Styles for .part-five (Mobile) */
+  .part-five {
+    padding: 1rem;
+  }
+
+  /* Styles for .partFive-Content (Mobile) */
+  .partFive-Content {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .part-Title {
+    text-align: justify;
+  }
+
+  /* Styles for .map-Container (Mobile) */
+  .map-Container {
+    width: 100%; /* Take up full width on mobile */
+    height: 300px; /* Adjust the height for mobile */
+    margin-bottom: 1rem; /* Add spacing between .map-Container and .part-fivetext */
+   margin-top: 2rem;
+  }
+  .part-Title {
+    text-align: justify;
+  }
+
+  /* Styles for .part-fivetext (Mobile) */
+  .part-fivetext {
+    width: 100%; /* Take up full width on mobile */
+    margin-right: 0;
+  }
+}

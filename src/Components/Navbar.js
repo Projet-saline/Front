@@ -22,7 +22,7 @@ const Navbar = (Style) =>{
                 <div className="Menu">
                     <p>Courses</p>
                     <p>Blog</p>
-                    <p>News</p>
+                    <p>About us</p>
                     <p className="Transparent-Button">Sign in</p>
                 </div>
                 <button className="Burger-Button" onClick={toggleMenu}>

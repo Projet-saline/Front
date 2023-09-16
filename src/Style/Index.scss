@@ -15,18 +15,17 @@
 @import "./Components/Subscription.scss";
 @import "./Components/CalltoAction.scss";
 @import "./Components/SubscriptionModule.scss";
-@import "./Components/Navbar.scss";
-@import "./Components/Cut.scss";
-
-// Pages
-@import "./Pages/Home.scss";
-//@import "./Pages/About.scss";
-//@import "./Pages/Contact.scss";
-//@import "./Pages/Courses.scss";
-//@import "./Pages/News.scss";
-//@import "./Pages/NewsArticle.scss";
-//@import "./Pages/Course.scss";
-@import "./Pages/NotFound.scss";
-@import "./Pages/Login.scss";
-
-
+@import "./Design_System/buttons.scss";
+@import "./Components/ReviewCarousel.scss";
+@import "./Pages/About.scss";
+@import "./Pages/Contact.scss";
+@import "./Components/PartOne";
+@import "./Components/PartTwo";
+@import "./Components/PartThree";
+@import "./Components/PartFour";
+@import "./Components/PartFive";
+@import "./Components/PageFaq.scss";
+@import "./Components/ButtonDouble.scss";
+@import "./Components/Accordion.scss";
+@import "./Components/MainFaq.scss";
+@import "./Components/PresentationProf"

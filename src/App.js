@@ -3,19 +3,8 @@ import {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
 
 //Import of pages
 import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import News from "./Pages/News";
-import NewsArticle from "./Pages/NewsArticle";
-import Login from "./Pages/Login";
-import Help from "./Pages/Help";
-import Courses from "./Pages/Courses";
-import Course from "./Pages/Course";
-import Blog from "./Pages/Blog";
-import BlogArticle from "./Pages/BlogArticle";
-import NotFound from "./Pages/NotFound";
-
-
+import * as router from "react-router-dom";
+import "./Style/Index.scss";
 
 const App = () => {
   return (
