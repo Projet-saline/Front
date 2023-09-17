@@ -1,0 +1,70 @@
+
+.profPage-Container {
+  font-family: 'Playfair Display', serif;
+  background-color: $primary-400;
+  color: $primary-50; 
+}
+
+.pageProf-Title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.pageProf-Content {
+  display: flex;
+  align-items: center; /* Center align content */
+  width: 80%; /* Full width on mobile */
+  padding: 2rem; /* Add padding for spacing on mobile */
+  margin: 4rem auto;
+  border-radius: 1rem;
+  background-color:$primary-500; 
+}
+
+.pageProf-Image {
+  width: 25rem;
+  max-width: 30rem; 
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 2rem; 
+  margin-right: 0;
+}
+
+.pageProf-Text {
+  display: flex;
+  flex-direction: column;
+  color: $primary-500; /* Replace with your color code */
+  border-radius: 1rem;
+  overflow: scroll;
+  padding: 2rem;
+  background-color: $primary-500; 
+  color: $primary-50; 
+}
+
+.card-information-title,
+.card-information-text {
+  text-align: left;
+}
+
+.pageprof-tag {
+  display: inline-block;
+  text-align: left;
+  color: $primary-50; 
+  border-radius: 1.5rem;
+}
+
+.pageprof-text {
+  color: $primary-50; 
+}
+
+/* Media Query for larger screens (desktop) */
+@media (min-width: 768px) {
+  .pageProf-Content {
+    flex-direction: row; /* Switch back to row layout on desktop */
+    justify-content: space-around;
+  }
+
+  .pageProf-Image {
+    margin-right: 4rem;
+    margin-bottom: 0; /* Reset margin on desktop */
+  }
+}

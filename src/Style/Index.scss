@@ -4,7 +4,6 @@
 @import "./Design_System/buttons.scss";
 @import "./Design_System/typography.scss";
 @import "./Design_System/fonts.scss";
-
 // Components
 @import "./Components/ReviewCarousel.scss";
 @import "./Components/NewsSection.scss";
@@ -28,4 +27,6 @@
 @import "./Components/ButtonDouble.scss";
 @import "./Components/Accordion.scss";
 @import "./Components/MainFaq.scss";
-@import "./Components/PresentationProf"
+@import "./Pages/Professeurs.scss";
+@import "./Pages/ProfesseurPage";
+

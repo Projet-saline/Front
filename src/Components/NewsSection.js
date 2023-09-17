@@ -4,7 +4,7 @@ const NewsSection = () => {
 
     return (
         <div className="News">
-            <h1>News Section</h1>
+            <h1>News</h1>
             <div className="NewsContainer">
                 <div className="NewsItem">
                     <div className="NewsImage">

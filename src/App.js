@@ -16,7 +16,8 @@ import Blog from "../src/Pages/Blog";
 import BlogArticle from "../src/Pages/BlogArticle";
 import NotFound from "../src/Pages/NotFound";
 import Frequentlyquestions from "./Pages/Frequentlyquestions";
-  
+import Professeurs from "./Pages/Professeurs";
+import Professeur from "./Pages/Professeur";
 
 
 const App = () => {
@@ -43,6 +44,14 @@ const App = () => {
           <Route
             path="/news"
             element={<News />} // Maedeh
+          />
+          <Route
+            path="/professeurs/:id"
+            element={<Professeur />} // Maedeh
+          />
+           <Route
+            path="/professeurs"
+            element={<Professeurs />} // Maedeh
           />
           <Route
             path="/login"

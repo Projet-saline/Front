@@ -1,0 +1,103 @@
+
+.presentationPage {
+  font-family: Playfair Display;
+  margin: 3rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.presentationcard-Title, .presentationcard-SubTitle {
+  font-family: Playfair Display;
+  letter-spacing: 0.1rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Playfair Display;
+  border-radius: 1.5rem;
+}
+
+.card-presentation {
+  display: flex;
+  flex-direction: column;
+  // margin: 1.2px;
+  padding-top: 3rem;
+  width: 20rem;
+  transition: transform 0.3s, box-shadow 0.3s; /* Ajoute une transition douce */
+}
+
+.presentation-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-presentation:hover {
+  transform: scale(1.05); /* Augmente légèrement la taille lors du survol */
+}
+
+.picture-card {
+  height: 26rem;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.card-information-title {
+  color: $primary-50;
+}
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-information {
+  height: auto;
+  flex-grow: 1;
+  padding: 1.4rem 1rem;
+  line-height: 1.5rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+  background-color: #171C3B;
+  color: $primary-50;
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+  font-family: Playfair Display;
+}
+
+.card-information-title {
+  color: $primary-50;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: Playfair Display;
+}
+
+.card-information-text {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 2rem 0;
+  color: $primary-50;
+}
+.read-more {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .presentationPage {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+
+  .card-presentation {
+    width: 100%; /* Make cards take up full width on smaller screens */
+  }
+  .presentationcard-Title, .presentationcard-SubTitle {
+    font-family: Playfair Display;
+    text-align: center;
+    text-align: justify;
+  }
+}
