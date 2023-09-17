@@ -35,21 +35,18 @@ const NewsArticle = () => {
 
     return (
         <>
-            <div className="news-article">
                 {article ? (
                     <>
+                        <Navbar Style={true}/>
                         <h2 className="article-title">{article.title}</h2>
                         <p className="article-date">{`Date de publication : ${article.date}`}</p>
-                        <p className="article-content">{article.content}</p>
-                        <a className="article-link" href={`/article/${id}`}>Lire la suite</a>
+                        <p className="article-content">{article.body}</p>
+                        <a className="article-link" href={`/article/${id+1}`}>Lire le prochain article</a>
+                        <Footer/>
                     </>
                 ) : (
-                    <div className="Loading">
-                        <div className="Loader"></div>
-                        <p>Chargement en cours...</p>
-                    </div>
+                    <Loading/>
                 )}
-            </div>
         </>
     );
 }

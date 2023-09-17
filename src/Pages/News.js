@@ -2,27 +2,51 @@ import React from "react";
 
 
 const News = () => {
+
+    const [news, setNews] = useState([]);
+
+    const getNews = async () => {
+        const response = await fetch('http://localhost:3000/news/last');
+        const data = await response.json()
+        .then((data) => {
+            console.log(data);
+            setNews(data);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
+    }
+
+    useEffect(() => {
+            getNews();
+        }, []);
+
+
     return (
         <>
-            <div className="news">
-                <h2 className="news-title">News</h2>
-                <div className="news-list">
-                    <div className="news-item">
-                        <h3 className="news-item-title">Titre de l'article</h3>
-                        <p className="news-item-date">Date de publication</p>
-                        <p className="news-item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nunc a aliquet lacinia, augue velit ultricies lorem, vitae aliquam nisi velit vel sem. Nulla facilisi. Sed euismod, sapien vitae tincidunt aliquam, magna urna tincidunt justo, vitae aliquet mi nisl nec nisl. Sed non nunc nec nunc aliquet sagittis. Nunc vitae nibh in nisl aliquet aliquet. Donec vel nisi vitae nunc aliquet ultricies. In hac habitasse platea dictumst. Sed non nunc nec nunc aliquet sagittis. Nunc vitae nibh in nisl aliquet aliquet. Donec vel nisi vitae nunc aliquet ultricies. In hac habitasse platea dictumst.</p>
-                        <a className="news-item-link" href="/article/1">Lire la suite</a>
+            {news ? (
+                <>
+                    <Navbar Style={true}/>
+                    <div className="news">
+                        <h1 className="news-title">Actualités</h1>
+                        <div className="news-container">
+                            {news.map((article) => (
+                                <div className="news-article" key={article.id}>
+                                    <h2 className="article-title">{article.title}</h2>
+                                    <p className="article-date">{`Date de publication : ${article.date}`}</p>
+                                    <p className="article-content">{article.body}</p>
+                                    <a className="article-link" href={`/article/${article.id}`}>Lire l'article</a>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                    <div className="news-item">
-                        <h3 className="news-item-title">Titre de l'article</h3>
-                        <p className="news-item-date">Date de publication</p>
-                        <p className="news-item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nunc a aliquet lacinia, augue velit ultricies lorem, vitae aliquam nisi velit vel sem. Nulla facilisi. Sed euismod, sapien vitae tincidunt aliquam, magna urna tincidunt justo, vitae aliquet mi nisl nec nisl. Sed non nunc nec nunc aliquet sagittis. Nunc vitae nibh in nisl aliquet aliquet. Donec vel nisi vitae nunc aliquet ultricies. In hac habitasse platea dictumst. Sed non nunc nec nunc aliquet sagittis. Nunc vitae nibh in nisl aliquet aliquet. Donec vel nisi vitae nunc aliquet ultricies
-                        </p>
-                        <a className="news-item-link" href="/article/2">Lire la suite</a>
-                    </div>
-                
-                </div>
-            </div>
+                    <Footer/>
+                </>
+            ) : (
+                <Loading/>
+            )}
+            
         </>
     );
 }

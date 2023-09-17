@@ -19,4 +19,4 @@ export default function About() {
     </>
   )
 }
->>>>>>> 89562d8 (About us, contact us, faq)
+
