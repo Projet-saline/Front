@@ -35,6 +35,7 @@ const NewsArticle = () => {
 
     return (
         <>
+        {/* <Navbar /> */}
             <div className="news-article">
                 {article ? (
                     <>
@@ -50,6 +51,7 @@ const NewsArticle = () => {
                     </div>
                 )}
             </div>
+            <Footer />
         </>
     );
 }

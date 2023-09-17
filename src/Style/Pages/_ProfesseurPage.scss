@@ -43,10 +43,12 @@
 .card-information-title,
 .card-information-text {
   text-align: left;
+  line-height: 1.5rem;
 }
 
 .pageprof-tag {
   display: inline-block;
+  font-weight: 400;
   text-align: left;
   color: $primary-50; 
   border-radius: 1.5rem;
