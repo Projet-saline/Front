@@ -27,11 +27,10 @@ const Navbar = () =>{
                     <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
                     <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
                     <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
-                    <div className={`Burger-Line ${isMenuOpen ? "open" : ""}`}></div>
                 </button>
             </div>
-            <div className={`Burger-Menu ${isMenuOpen ? "open" : ""}`}>
-                <ul>
+            <div className={`Burger-Menu ${isMenuOpen === true ? "open" : ""}`}>
+                <ul className="Menu-items">
                     {menuItems.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
