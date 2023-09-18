@@ -12,18 +12,18 @@ const Footer = () =>{
                     <img src="https://assets.website-files.com/61ae28f54843d30203fad6db/61c20adcfff22fd7c76d8911_Group%202620.svg" alt="Logo"/>
                 </div>
                 <div className="Footer-menu">
-                    <div className="Footer-element">
+                    <div className="Footer-element-1">
                         <p>About us</p>
                         <p>Contact us</p>
                         <p>Support</p>
                     </div>
-                    <div className="Footer-element">
+                    <div className="Footer-element-2">
                         <p>Terms of use</p>
                         <p>Privacy policy</p>
                         <p>Cookie policy</p>
                         <p>Accessibility</p>
                     </div>
-                    <div className="Footer-element">
+                    <div className="Footer-element-social">
                         <img src={facebook} alt="Facebook"/>
                         <img src={instagram} alt="Instagram"/>
                     </div>
