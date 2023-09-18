@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NewsSection = () => {
 
@@ -35,6 +36,9 @@ const NewsSection = () => {
                         <h3>News Title</h3>
                         <p>News description</p>
                     </div>
+                    <Link to = {`/article/id`} className='read-more'>
+                <span className='read-more'>Read more </span>
+        </Link>
                 </div>
             </div>
         </div>
