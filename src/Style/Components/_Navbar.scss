@@ -1,6 +1,7 @@
 .Navbar-All {
     //Transparent navbar on hero
     background-color: rgba($primary-500, 0.4);
+    position: fixed;
     z-index: 3;
     width: 100vw;
     height: 5vh;
@@ -11,7 +12,7 @@
     flex-direction: row;
     padding-left: 0%;
     padding-right: 0%;
-    position: fixed;
+   
     h1 {
         margin: 0;
     }
@@ -64,6 +65,7 @@
         color: $primary-50;
         padding: 1rem;
         display: flex;
+        position: fixed;
         flex-direction: column;
         
         h1 {
@@ -86,13 +88,15 @@
         z-index: 3;
         width: 100vw;
         color: $primary-50;
-        padding: 1rem;
+        padding: auto;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         padding-left: 0%;
         padding-right: 0%;
         position: fixed;
+      
+      
 
         .Menu {
             width: 70%;
@@ -101,6 +105,7 @@
             justify-content: flex-end;
             align-items: center;
             margin-right: 5%;
+          
 
         }
         
@@ -142,7 +147,7 @@
         width: 2rem;
         height: 0.2rem;
         background-color: $primary-50;
-        margin: 0.3rem;
+        margin: 0.4rem;
     }
     
     .Burger-Menu {
@@ -156,11 +161,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform: translateX(0.8rem);
+        transform: translateX(200%);
         transition: transform 0.5s ease-in-out;
     }
+
+    .Burger-Menu.open {
+        transform: translateX(0);
+    }
     
-    /* Styles pour ouvrir le */
+    /* Styles pour le menu ouvert */
     .Menu.open p {
         opacity: 0.7;
       }
@@ -177,19 +186,34 @@
         transform: translateY(-10px) rotate(45deg);
       }
       
+      .Menu-items.open {
+        transform: translateX(0);
+        flex-direction: column;
+        justify-content: center;
+        position:fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        padding: 2rem;
+
+
+      }
       .Burger-Menu {
         display: none; /* Masquez le menu burger par défaut */
         position: absolute;
         top: 4.9rem;
-        left: 24rem;
+        left: auto;
+        right: 0rem;
         background-color: rgba($primary-500, 0.4);
-        border: none;
-        
+        overflow: hidden;
       }
       
       .Burger-Menu.open {
         display: block;
       }
+
+
       
       .Menu_open .Burger-Menu {
         list-style: none;
